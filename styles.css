@@ -15,3 +15,65 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at top right, #1e293b, #0f172a);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #f8fafc, var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.hero .description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn.primary {
+    background-color: var(--accent-color);
+    color: #000;
+}
+
+.btn.primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn.secondary {
+    border: 1px solid var(--text-muted);
+    color: var(--text-main);
+    margin-left: 1rem;
+}
+
+.btn.secondary:hover {
+    border-color: var(--text-main);
+}
