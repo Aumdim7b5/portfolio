@@ -131,3 +131,32 @@ body {
     font-size: 1.1rem;
     max-width: 800px;
 }
+
+.project-card {
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    border: 1px solid #334155;
+    padding: 3rem;
+    display: flex;
+    gap: 3rem;
+}
+.project-content h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+.project-tags {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+.project-tags li {
+    background-color: #0f172a;
+    color: var(--accent-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px;
+    font-size: 0.875rem;
+    border: 1px solid #1e293b;
+}
