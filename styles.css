@@ -138,7 +138,53 @@ body {
     border: 1px solid #334155;
     padding: 3rem;
     display: flex;
+    align-items: center;
     gap: 3rem;
+}
+.project-carousel {
+    flex: 1.2;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.dot.active, .dot:hover {
+    background-color: var(--accent-color);
+}
+.project-content {
+    flex: 1;
 }
 .project-content h3 {
     font-size: 1.8rem;
@@ -159,4 +205,21 @@ body {
     border-radius: 99px;
     font-size: 0.875rem;
     border: 1px solid #1e293b;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .project-card {
+        padding: 1.5rem;
+    }
+    .btn.secondary {
+        margin-left: 0;
+        margin-top: 1rem;
+        display: inline-block;
+    }
 }
